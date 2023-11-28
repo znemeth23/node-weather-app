@@ -12,7 +12,7 @@ const forecast = (lat, long, callback) => {
             const currentWeather = body.current;
             const currentLocation = body.location;
             callback(undefined, 'In ' + currentLocation.name + ', ' + currentLocation.country + ', it is currently ' + currentWeather.temperature
-                + '°C (feels like ' + currentWeather.feelslike + '°C) and the chance of precipitation is ' + currentWeather.precip + '%.'
+                + '°C (feels like ' + currentWeather.feelslike + '°C), humidity is ' + currentWeather.humidity + '%, and the chance of precipitation is ' + currentWeather.precip + '%.'
             );
         }
     });
